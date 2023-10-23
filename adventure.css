@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+*::selection {
+    color: #94C11E;
+    background-color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:active h3 {
+    color: white;
+}
+
+.links:visited:active h3 {
+    color: white;
+}
+
+.nav {
+    position: fixed;
+    z-index: 199;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 12px;
+    height: 13vh;
+    width: 100%;
+}
+
+.nav img {
+    height: 7.5vh;
+}
+
+.nav .web-logo {
+    height: 5vh;
+}
+
+.button {
+    padding: 1.8vh 5vh;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: black;
+    border: 2.5px solid #94C11E;
+}
+
+.page1 {
+    padding: 0 10px;
+    padding-top: 13vh;
+}
+
+.page1 img {
+    height: 28vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.page1 h4 {
+    font-size: 16px;
+    font-weight: 900;
+    padding-top: 25px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+    color: #94C11E;
+}
+
+.page1 h1 {
+    font-size: 51px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 46px;
+    position: relative;
+    -webkit-text-stroke: 2px #94C11E;
+    color: transparent;
+    padding-bottom: 15px;
+}
+
+.page1 h1::before {
+    content: "DINO CRAZY GOLF";
+    position: absolute;
+    bottom: -3px;
+    left: 3px;
+    color: white;
+    padding-bottom: 15px;
+    -webkit-text-stroke: transparent;
+}
+
+.page1 h1:nth-child(6) {
+    font-size: 34px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 46px;
+    position: relative;
+    -webkit-text-stroke: transparent;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.page1 h1:nth-child(6):before {
+    content: "";
+}
+
+.para {
+    font-weight: 100;
+    line-height: 2;
+    padding-bottom: 35px;
+}
+
+.page2 {
+    padding: 0 16px;
+}
+
+.page2 .button {
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.page2>h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+}
+
+.page2 .game {
+    height: 58vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to left bottom, #98C51E, #B2E623, #96C41E);
+    position: relative;
+    margin-top: 20px;
+}
+
+.page2 .game img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page2 .game img:nth-child(3) {
+    position: absolute;
+    right: 0%;
+    bottom: 3%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.page2 .game .details {
+    position: absolute;
+    z-index: 5;
+}
+
+.page2 .game .details .game-details {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page2 .game .details .game-details h1 {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.page2 .game .details .game-details h2 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    padding: 8px 0;
+    font-weight: 900;
+}
+
+.page2 .game .details .game-details h2:nth-child(3) {
+    font-style: italic;
+    font-weight: 800;
+    padding: 0;
+    font-size: 14px;
+}
+
+.page2 .game .details .person {
+    padding: 0 10px;
+    padding-top: 40px;
+}
+
+.page2 .game .details .person h2 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8vh;
+}
+
+.page2 .game .details .person>h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.page2 .game .details .person>h3 {
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.page2 .game .details .person h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 1.8vh;
+}
+
+.page2 .game .details .person .person-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page2 .game .details .person .person-1:nth-child(2) {
+    padding-top: 10px;
+}
+
+.page2 .game .details .person .person-1:nth-child(5) {
+    padding-top: 20px;
+}
+
+.page3 {
+    padding: 0 13px;
+    padding-top: 70px;
+}
+
+.page3 .birthday {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page3 .birthday .birthday-1 {
+    border-radius: 10px;
+    height: 28vh;
+    width: 21vh;
+    background-color: white;
+    padding: 8px;
+}
+
+.page3 .birthday .birthday-1 img {
+    height: 19vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: brightness(0.8);
+}
+
+.page3 .birthday .birthday-1 h5 {
+    color: black;
+    text-align: center;
+    line-height: 1.7;
+    font-family: 'Shadows Into Light', cursive;
+    opacity: 0.7;
+}
+.page3 .info {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 0 30px;
+    padding-top: 20px;
+    background: linear-gradient(to left bottom, #9ECD1F, #B2E723, #9DCB1F);
+}
+
+.page3 .info h2 {
+    color: black;
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.page3 .info p {
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.page3 .info p:nth-child(3) {
+    padding-bottom: 0;
+}
+.page3 .info .button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 26%;
+}
+.page3 .img-scroll-container{
+    position: relative;
+    min-height: 44vh;
+}
+.page3 .img-scroll-container .img-scroll {
+    height: 44vh;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20%;
+    position: absolute;
+}
+.page3 .img-scroll-container .img-scroll .img-scroll-1 {
+    height: 26vh;
+    width: 120%;
+    position: absolute;
+    left: -9%;
+    transform: rotate(-7deg);
+}
+.page3 .img-scroll-container .img-scroll .img-scroll-1 h3 {
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0%;
+    left: 24%;
+    font-size: 1.6vh;
+}
+.page3 .img-scroll-container .img-scroll .img-scroll-1 .img-scroll-2{
+    display: flex;
+    margin-left: 20px;
+}
+.page3 .img-scroll-container .img-scroll .img-scroll-1 .img-scroll-2 .img-scroll-2-in{
+    display: flex;
+    gap: 20px;
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+.page3 .img-scroll-container .img-scroll .img-scroll-1 .img-scroll-2 img{
+    height: 22vh;
+    width: 22vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.page4 h1{
+    text-align: center;
+    font-weight: 900;
+}
+.page4 section{
+    margin: 0 17px;
+    padding-top: 20px;
+}
+.page4 .option{
+    overflow: hidden;
+    height: 11.2vh;
+}
+.page4 .option p{
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.7vh;
+}
+.page4 .option-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #94C11E;
+}
+.page4 .option:nth-child(4){
+    padding-bottom: 20px;
+    border-bottom: 1px solid #94C11E;   
+}
+.page4 .option h2{
+    margin: 0 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.page4 .option i{
+    margin: 0 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #94C11E;
+}
+
+.page5{
+    padding-top: 40px;
+    position: relative;
+    height: 78vh;
+}
+.page5>h3{
+    padding: 0px 12px;
+    position: absolute;
+    top: 52px;
+    color: #B2E723;
+    font-size: 27.5px;
+}
+.page5 .container{
+    padding: 15px 15px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.page5 .container .part{
+    height: 20vh;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.page5 .container .part h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page5 .container .part-1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+.page5 .container .part-2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-5-1002x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+.page5 .container .part-3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+footer{
+    position: relative;
+}
+.about{
+    min-height: 80vh;
+    width: 100%;
+    background:linear-gradient(to left bottom, #0C9E3A ,#8EBF1F , #ADDF22) ;
+}
+.about>img{
+    position: absolute;
+    bottom: 1%;
+    opacity: 0.8;
+}
+.about .details{
+    padding: 0 15px;
+    padding-top: 20px;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+.details .section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details .section-1>img{
+    height: 10vh;
+}
+.details .section-1 i{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.details .section-2{
+    margin-top: 40px;
+}
+.details .section-2 h3{
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-weight: 900;
+    font-size: 21px;
+    color: black;
+}
+
+.details .section-3{
+    margin-top: 20px;
+}
+.details .section-3 h5{
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+}
+.details .section-3 h4{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 19px;
+    color: black;
+}
+.details .section-4{
+    margin-top: 20px;
+}
+.details .section-4 h6{
+    font-weight: 600;
+    color: black;
+}
+.details .section-4 h5{
+    margin-top: 10px;
+    font-size: 12px;
+    color: black;
+}
+.details .section-4 h6:nth-child(3){
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+.menu-section-open{
+    height: 100vh;
+    width: 100%;
+    padding-top: 24vh;
+    background:linear-gradient(to left bottom, #0C9E3A ,#8EBF1F , #ADDF22) ;
+    position: fixed;
+    z-index: 198;
+}
+.menu-section-open h2{
+    text-transform: uppercase;
+    font-size: 4vh;
+    text-align: center;
+    line-height: 2.3;
+    font-weight: 900;
+    position: relative;
+    color: black;
+    -webkit-text-stroke: 2px #94C11E;
+
+}
+.menu-section-open .topic1::before{
+    content: "TOPTRACER RANGE";
+    position: absolute;
+    color: white;
+    bottom: -2.5px;
+    right: 19px;
+    -webkit-text-stroke: 0px white;
+}
+.menu-section-open .topic2::before{
+    content: "GOLF LESSONS";
+    position: absolute;
+    color: white;
+    bottom: -2.5px;
+    right: 61px;
+    -webkit-text-stroke: 0px white;
+}
+.menu-section-open .topic3::before{
+    content: "ADVENTURE GOLF";
+    position: absolute;
+    color: white;
+    bottom: -2.5px;
+    right: 32px;
+    -webkit-text-stroke: 0px white;
+}
+.menu-section-open .topic4::before{
+    content: "Café";
+    position: absolute;
+    color: white;
+    bottom: -2.5px;
+    right: 148px;
+    -webkit-text-stroke: 0px white;
+}
+.menu-section-open .topic5::before{
+    content: "EVENTS";
+    position: absolute;
+    color: white;
+    bottom: -2.5px;
+    right: 125px;
+    -webkit-text-stroke: 0px white;
+}
