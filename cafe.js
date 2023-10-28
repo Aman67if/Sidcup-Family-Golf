@@ -37,7 +37,7 @@ logos.addEventListener("click", function () {
     if (open1 == 0) {
         menu.innerHTML = `<div class="menu-section-open">
     <a href="./index.html" class="links"><h2 class="topic1">Toptracer Range</h2></a>
-    <a href="./adventure.html" class="links"><h2 class="topic2">Golf Lessons</h2></a>
+    <a href="./lesson.html" class="links"><h2 class="topic2">Golf Lessons</h2></a>
     <a href="./adventure.html" class="links"><h2 class="topic3">Adventure Golf</h2></a>
     <a href="./cafe.html" class="links"><h2 class="topic4">Café</h2></a>
     <a href="./events.html" class="links"><h2 class="topic5">Events</h2></a>

@@ -217,10 +217,16 @@ body {
     height: 40vh;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #0C9E3A;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+}
+.page3 .person-container .person-in .person-1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGUAZHyWDwqjSsCsYh5-2UaQ1IBkIuU_wXg&usqp=CAU);
+}
+.page3 .person-container .person-in .person-2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-dqUUiE5YxWDzCl8l9a_XSY9kJF1VCGrFw&usqp=CAU);
+    background-position: center;
 }
 .page3 .person-container .person-in .person h3{
     text-transform: uppercase;
@@ -410,40 +416,6 @@ footer{
     margin-top: 18px;
     font-size: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .menu-section-open{
     height: 100vh;

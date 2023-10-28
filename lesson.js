@@ -7,6 +7,14 @@ let juniour = document.querySelector("#juniour");
 let U1 = document.querySelector(".underline1");
 let U2 = document.querySelector(".underline2");
 let U3 = document.querySelector(".underline3");
+let Question1 = document.querySelector(".page4 .option-1");
+let Question2 = document.querySelector(".page4 .option-2");
+let Question3 = document.querySelector(".page4 .option-3");
+let Question4 = document.querySelector(".page4 .option-4");
+let expand1 = 0;
+let expand2 = 0;
+let expand3 = 0;
+let expand4 = 0;
 let open1 = 0;
 
 gsap.to(".nav", {
@@ -230,15 +238,6 @@ juniour.addEventListener("click", function () {
     duration: 1
   })
 })
-
-let Question1 = document.querySelector(".page4 .option-1");
-let Question2 = document.querySelector(".page4 .option-2");
-let Question3 = document.querySelector(".page4 .option-3");
-let Question4 = document.querySelector(".page4 .option-4");
-let expand1 = 0;
-let expand2 = 0;
-let expand3 = 0;
-let expand4 = 0;
 
 Question1.addEventListener("click", function () {
   if (expand1 == 0) {
