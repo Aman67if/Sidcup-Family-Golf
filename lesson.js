@@ -1,14 +1,13 @@
 let menu = document.querySelector(".menu-page");
 let logos = document.querySelector(".logos");
+let menuContainer = document.querySelector(".menu-items-container");
+let indivisual = document.querySelector("#indivisual");
+let group = document.querySelector("#group");
+let juniour = document.querySelector("#juniour");
+let U1 = document.querySelector(".underline1");
+let U2 = document.querySelector(".underline2");
+let U3 = document.querySelector(".underline3");
 let open1 = 0;
-let Question1 = document.querySelector(".page4 .option-1");
-let Question2 = document.querySelector(".page4 .option-2");
-let Question3 = document.querySelector(".page4 .option-3");
-let Question4 = document.querySelector(".page4 .option-4");
-let expand1 = 0;
-let expand2 = 0;
-let expand3 = 0;
-let expand4 = 0;
 
 gsap.to(".nav", {
   height: "11vh",
@@ -36,7 +35,7 @@ logos.addEventListener("click", function () {
   if (open1 == 0) {
     menu.innerHTML = `<div class="menu-section-open">
     <a href="./index.html" class="links"><h2 class="topic1">Toptracer Range</h2></a>
-    <a href="./adventure.html" class="links"><h2 class="topic2">Golf Lessons</h2></a>
+    <a href="./lesson.html" class="links"><h2 class="topic2">Golf Lessons</h2></a>
     <a href="./adventure.html" class="links"><h2 class="topic3">Adventure Golf</h2></a>
     <a href="./cafe.html" class="links"><h2 class="topic4">Café</h2></a>
     <a href="./events.html" class="links"><h2 class="topic5">Events</h2></a>
@@ -84,11 +83,167 @@ logos.addEventListener("click", function () {
   }
 })
 
+indivisual.addEventListener("click", function () {
+  U1.style.margin = "0 70px";
+  menuContainer.innerHTML = `<div class="menu-items menu-items-1">
+  <section class="meals">
+      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/lessons-individual-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+          alt="">
+      <h2>Indivisual Lessons</h2>
+      <div class="items-container">
+          <p>Get all the attention you need with a one-to-one lesson.</p>
+          <p>Your golf coach for one-off sessions or a series of sessions will ensure you focus on what matters to you and your game in order to reach your goals whether it be performance or results based.</p>
+      </div>
+  </section>
+  <button class="button">Contact Our Pros</button>
+</div>`;
+  gsap.to(".underline2,.underline3", {
+    margin: "0 197px",
+  })
+  setTimeout(function () {
+    U1.style.visibility = "visible";
+  }, 50)
+  setTimeout(function () {
+    U2.style.visibility = "hidden";
+  }, 440)
+  setTimeout(function () {
+    U3.style.visibility = "hidden";
+  }, 440)
+  gsap.from(".underline1", {
+    margin: "0 250px"
+  })
+  gsap.to("#indivisual", {
+    color: "#94C11E"
+  })
+  gsap.to("#group, #juniour", {
+    color: "white"
+  })
+  gsap.from(".menu-items-1", {
+    scale: 0.88,
+  })
+  gsap.from(".menu-items-1 h2, .menu-items-1 p, .menu-items-1 button", {
+    x: 50,
+    opacity: 0
+  })
+  gsap.from(".meals img", {
+    opacity: 0.3,
+    duration: 1
+  })
+})
+
+group.addEventListener("click", function () {
+  U2.style.margin = "0 100px";
+  menuContainer.innerHTML = `<div class="menu-items menu-items-2">
+  <section class="meals">
+      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/03/lessons-group-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+          alt="">
+      <h2>Group Lessons</h2>
+      <div class="items-container">
+          <p>Fancy learning the game with friends? Or want to get involved in a social atmosphere with
+              likeminded players?</p>
+          <p>Our group sessions are ideal for you. Suitable for beginners and improving golfers, enjoy a
+              bit of friendly competition whilst you learn the beautiful game.</p>
+      </div>
+  </section>
+  <button class="button">Contact Our Pros</button>
+</div>`;
+  gsap.to(".underline1,.underline3", {
+    margin: "0 197px",
+  })
+  setTimeout(function () {
+    U1.style.visibility = "hidden";
+  }, 450)
+  setTimeout(function () {
+    U2.style.visibility = "visible";
+  }, 50)
+  setTimeout(function () {
+    U3.style.visibility = "hidden";
+  }, 440)
+  gsap.from(".underline2", {
+    margin: "0 250px"
+  })
+  gsap.to("#group", {
+    color: "#94C11E"
+  })
+  gsap.to("#indivisual, #juniour", {
+    color: "white"
+  })
+  gsap.from(".menu-items-2", {
+    scale: 0.88,
+  })
+  gsap.from(".menu-items-2 h2, .menu-items-2 p, .menu-items-2 button", {
+    x: 50,
+    opacity: 0
+  })
+  gsap.from(".meals img", {
+    opacity: 0.3,
+    duration: 1
+  })
+})
+
+juniour.addEventListener("click", function () {
+  U3.style.margin = "0 95px";
+  menuContainer.innerHTML = `<div class="menu-items menu-items-3">
+  <section class="meals">
+      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/03/lessons-junior-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+          alt="">
+      <h2>Junior Lessons</h2>
+      <div class="items-container">
+          <p>Lessons at Sidcup Family Golf can be tailored to any age or ability, designed to help your
+              child to not only learn golf but, essential social skills and above all…have fun!</p>
+          <p >We have the perfect facilities to develop young players, from complete beginners through to
+              elite youth performance.</p>
+      </div>
+  </section>
+  <button class="button">Contact Our Pros</button>
+</div>`;
+  gsap.to(".underline1,.underline2", {
+    margin: "0 197px",
+  })
+  setTimeout(function () {
+    U1.style.visibility = "hidden";
+  }, 450)
+  setTimeout(function () {
+    U2.style.visibility = "hidden";
+  }, 440)
+  setTimeout(function () {
+    U3.style.visibility = "visible";
+  }, 50)
+  gsap.from(".underline3", {
+    margin: "0 250px"
+  })
+  gsap.to("#juniour", {
+    color: "#94C11E"
+  })
+  gsap.to("#indivisual, #group", {
+    color: "white"
+  })
+  gsap.from(".menu-items-3", {
+    scale: 0.88,
+  })
+  gsap.from(".menu-items-3 h2, .menu-items-3 p, .menu-items-3 button", {
+    x: 50,
+    opacity: 0
+  })
+  gsap.from(".meals img", {
+    opacity: 0.3,
+    duration: 1
+  })
+})
+
+let Question1 = document.querySelector(".page4 .option-1");
+let Question2 = document.querySelector(".page4 .option-2");
+let Question3 = document.querySelector(".page4 .option-3");
+let Question4 = document.querySelector(".page4 .option-4");
+let expand1 = 0;
+let expand2 = 0;
+let expand3 = 0;
+let expand4 = 0;
 
 Question1.addEventListener("click", function () {
   if (expand1 == 0) {
     gsap.to(".page4 .option-1", {
-      height: "30vh",
+      height: "23vh",
     })
     gsap.to(".option-1 h2", {
       color: "#93C11D"
@@ -138,7 +293,7 @@ Question2.addEventListener("click", function () {
 Question3.addEventListener("click", function () {
   if (expand3 == 0) {
     gsap.to(".page4 .option-3", {
-      height: "28vh",
+      height: "20vh",
     })
     gsap.to(".option-3 h2", {
       color: "#93C11D"
@@ -163,7 +318,7 @@ Question3.addEventListener("click", function () {
 Question4.addEventListener("click", function () {
   if (expand4 == 0) {
     gsap.to(".page4 .option-4", {
-      height: "22vh"
+      height: "18vh"
     })
     gsap.to(".option-4 h2", {
       color: "#93C11D"

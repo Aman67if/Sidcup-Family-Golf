@@ -1,37 +1,33 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat';
     color: white;
 }
-*::selection{
+
+*::selection {
     color: #94C11E;
     background-color: white;
 }
-html,body{
-    height:100%;
-    width:100%;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
     background-color: black;
 }
 
-.links{
+.links {
     text-decoration: none;
 }
-.links:active h3{
-    color: white;
-}
-.links:visited:active h3{
+
+.links:active h3 {
     color: white;
 }
 
-.button {
-    padding: 13px 35px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: 500;
-    background-color: black;
-    border: 2.5px solid #94C11E;
+.links:visited:active h3 {
+    color: white;
 }
 
 .nav {
@@ -44,13 +40,16 @@ html,body{
     height: 13vh;
     width: 100%;
 }
-.nav img{
+
+.nav img {
     height: 7.5vh;
 }
-.nav .web-logo{
+
+.nav .web-logo {
     height: 5vh;
 }
-.nav button{
+
+.button {
     padding: 1.8vh 5vh;
     border-radius: 50px;
     text-transform: uppercase;
@@ -86,31 +85,13 @@ html,body{
     padding-bottom: 15px;
 }
 .page1 h1::before{
-    content:"Café";
+    content:"Golf Lessons";
     position: absolute;
     bottom: -3px;
     left: 3px;
     color: white;
     padding-bottom: 15px;
     -webkit-text-stroke: transparent;
-}
-.page1 .opening{
-    height: 6vh;
-    width: 100%;
-    padding: 0 20px;
-    border: 1px solid #94C11E;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-radius: 10px;
-}
-.page1 .opening h2{
-    font-size: 1.5vh;
-    text-transform: uppercase;
-}
-.page1 .opening h5{
-    font-size: 1.4vh;
-    font-weight: 300;
 }
 
 .para{
@@ -120,76 +101,44 @@ html,body{
 }
 
 .page2{
-    padding: 0 10px;
-    padding-top: 50px;
-}
-.imgs{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.imgs img{
-    height: 19vh;
-    width: 21vh;
-    border-radius: 10px;
-    object-fit: cover;
-}
-.page2 h1{
-    font-size: 32px;
-    padding: 32px 0;
-    padding-left: 10px;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-.page3{
     padding-top: 3vh;
     min-height: 90vh;
     width: 100%;
 }
-.page3>h2{
+.page2>h2{
     font-weight: 900;
     text-align: center;
     font-size: 4vh;
     text-transform: uppercase;
 }
-.page3 .button{
-    margin-top: 4vh;
-    margin-left: 15%;
-    padding: 12px 35px;
-}
-.page3 .menu-list{
+.page2 .menu-list{
     padding-top: 20px;
     height: 21vh;
     width: 100%;
 }
-.page3 .menu-list .underline{
+.page2 .menu-list .underline{
     background-color: #94C11E;
     padding: 1px;
 }
-.page3 .menu-list .underline1{
-    margin: 0 125px;
+.page2 .menu-list .underline1{
+    margin: 0 70px;
 }
-.page3 .menu-list .underline2{
-    margin: 0 155px;
+.page2 .menu-list .underline2{
+    margin: 0 100px;
     visibility: hidden;
 }
-.page3 .menu-list .underline3{
-    margin: 0 90px;
+.page2 .menu-list .underline3{
+    margin: 0 95px;
     visibility: hidden;
 }
-.page3 .menu-list .underline4{
-    margin: 0 150px;
-    visibility: hidden;
-}
-.page3 .menu-list h3{
+.page2 .menu-list h3{
     text-transform: uppercase;
     font-size: 2.5vh;
     line-height: 1.4;
     font-weight: 900;
     text-align: center;
 }
-.page3 .menu-list h3:nth-child(1){
+.page2 .menu-list h3:nth-child(1){
     color: #94C11E;
 }
 .menu-items{
@@ -199,69 +148,163 @@ html,body{
     border-radius: 10px;
     padding: 0 10px;
     transition: all ease 0.2s;
+    overflow: hidden;
 }
 .menu-items .meals{
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .menu-items h2{
     color: black;
     font-size: 2.6vh;
-    border-bottom: 1px solid white;
     text-transform: uppercase;
     font-weight: 900;
 }
 .menu-items .items-container{
     padding-top: 20px;
 }
-.menu-items .items-container .item-price{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
-.menu-items .items-container .item-price h4{
-    text-transform: uppercase;
-    font-size: 1.5vh;
-    color: black;
-}
-.menu-items .items-container .item-price h6{
-    font-size: 1.5vh;
-    font-weight: 400;
-    color: black;
-}
 .menu-items .items-container p{
     color: black;
-    font-size: 1.6vh;
-    font-weight: 200;
+    font-weight: 500;
+    font-size: 1.9vh;
+    line-height: 1.8;
+}
+.menu-items-2 p:nth-child(2) , .menu-items-3 p:nth-child(2){
+    padding-top: 20px;
 }
 .menu-items img{
     margin-bottom: 20px;
-    margin-top: 25px;
-    height: 28vh;
+    height: 18vh;
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
-
-.page4{
-    padding-top: 100px;
-    position: relative;
-    height: 86vh;
+.menu-items button{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 1.4vh 4vh;
 }
-.page4>h3{
+
+.page3{
+    height: 108vh;
+    width: 100%;
+    padding-top: 50px;
+}
+.page3 .meet{
+    height: 10vh;
+    width: 100%;
+}
+.page3 .meet h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    font-size: 4vh;
+}
+.page3 .person-container{
+    position: relative;
+}
+.page3 .person-container img{
+    height: 11vh;
+    width: 11vh;
+    margin-top: -6%;
+}
+.page3 .person-container .person-in{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    padding: 0 20px;
+}
+.page3 .person-container .person-in .person{
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #0C9E3A;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.page3 .person-container .person-in .person h3{
+    text-transform: uppercase;
+    position: absolute;
+    left: 6%;
+    bottom: 5%;
+    font-size: 3vh;
+    font-weight: 900;
+}
+.page3 .person-container .person-in .person h4{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15%;
+    left: 6%;
+    font-weight: 900;
+}
+
+.page4 h1{
+    text-align: center;
+    font-weight: 900;
+}
+.page4 section{
+    margin: 0 17px;
+    padding-top: 20px;
+}
+.page4 .option{
+    overflow: hidden;
+    height: 11.2vh;
+}
+.page4 .option p{
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.7vh;
+}
+.page4 .option-in{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #94C11E;
+}
+.page4 .option:nth-child(4){
+    padding-bottom: 20px;
+    border-bottom: 1px solid #94C11E;   
+}
+.page4 .option h2{
+    margin: 0 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.page4 .option i{
+    margin: 0 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #94C11E;
+}
+
+.page5{
+    padding-top: 40px;
+    position: relative;
+    height: 78vh;
+}
+.page5>h3{
     padding: 0px 12px;
     position: absolute;
-    top: 112px;
+    top: 52px;
     color: #B2E723;
     font-size: 27.5px;
 }
-.page4 .container{
+.page5 .container{
     padding: 15px 15px;
     position: absolute;
     z-index: 10;
     width: 100%;
 }
-.page4 .container .part{
+.page5 .container .part{
     height: 20vh;
     width: 100%;
     margin-top: 20px;
@@ -269,7 +312,7 @@ html,body{
     background-size: cover;
     background-position: center;
 }
-.page4 .container .part h3{
+.page5 .container .part h3{
     text-transform: uppercase;
     font-size: 25px;
     height: 100%;
@@ -279,13 +322,13 @@ html,body{
     align-items: center;
     justify-content: center;
 }
-.page4 .container .part-1{
+.page5 .container .part-1{
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
 }
-.page4 .container .part-2{
-    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+.page5 .container .part-2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-5-1002x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
 }
-.page4 .container .part-3{
+.page5 .container .part-3{
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
 }
 
@@ -367,6 +410,40 @@ footer{
     margin-top: 18px;
     font-size: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menu-section-open{
     height: 100vh;

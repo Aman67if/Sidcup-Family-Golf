@@ -86,31 +86,13 @@ html,body{
     padding-bottom: 15px;
 }
 .page1 h1::before{
-    content:"Café";
+    content:"Events";
     position: absolute;
     bottom: -3px;
     left: 3px;
     color: white;
     padding-bottom: 15px;
     -webkit-text-stroke: transparent;
-}
-.page1 .opening{
-    height: 6vh;
-    width: 100%;
-    padding: 0 20px;
-    border: 1px solid #94C11E;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-radius: 10px;
-}
-.page1 .opening h2{
-    font-size: 1.5vh;
-    text-transform: uppercase;
-}
-.page1 .opening h5{
-    font-size: 1.4vh;
-    font-weight: 300;
 }
 
 .para{
@@ -121,7 +103,7 @@ html,body{
 
 .page2{
     padding: 0 10px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .imgs{
     display: flex;
@@ -129,7 +111,7 @@ html,body{
     justify-content: space-between;
 }
 .imgs img{
-    height: 19vh;
+    height: 13vh;
     width: 21vh;
     border-radius: 10px;
     object-fit: cover;
@@ -143,117 +125,54 @@ html,body{
 }
 
 .page3{
-    padding-top: 3vh;
-    min-height: 90vh;
-    width: 100%;
+    padding-top: 10px;
 }
-.page3>h2{
-    font-weight: 900;
-    text-align: center;
-    font-size: 4vh;
-    text-transform: uppercase;
+.page3 .board-container{
+    height: 22vh;
+    background: linear-gradient(to left bottom , #089D3B, #48Ad2E, #7EBB22, #9FCE20, #B1E622);
+    position: relative;
 }
-.page3 .button{
-    margin-top: 4vh;
-    margin-left: 15%;
-    padding: 12px 35px;
-}
-.page3 .menu-list{
-    padding-top: 20px;
-    height: 21vh;
-    width: 100%;
-}
-.page3 .menu-list .underline{
-    background-color: #94C11E;
-    padding: 1px;
-}
-.page3 .menu-list .underline1{
-    margin: 0 125px;
-}
-.page3 .menu-list .underline2{
-    margin: 0 155px;
-    visibility: hidden;
-}
-.page3 .menu-list .underline3{
-    margin: 0 90px;
-    visibility: hidden;
-}
-.page3 .menu-list .underline4{
-    margin: 0 150px;
-    visibility: hidden;
-}
-.page3 .menu-list h3{
-    text-transform: uppercase;
-    font-size: 2.5vh;
-    line-height: 1.4;
-    font-weight: 900;
-    text-align: center;
-}
-.page3 .menu-list h3:nth-child(1){
-    color: #94C11E;
-}
-.menu-items{
-    min-height: 60vh;
-    margin: 0 13px;
-    background: linear-gradient(to left bottom , #97C51E, #ABDE22,  #ABDE22, #B0E323, #96C01F);
-    border-radius: 10px;
-    padding: 0 10px;
-    transition: all ease 0.2s;
-}
-.menu-items .meals{
-    padding-top: 30px;
-}
-.menu-items h2{
-    color: black;
-    font-size: 2.6vh;
-    border-bottom: 1px solid white;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-.menu-items .items-container{
-    padding-top: 20px;
-}
-.menu-items .items-container .item-price{
+.page3 .board-container .back-img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
+    height: 100%;
 }
-.menu-items .items-container .item-price h4{
+.page3 .board-container .back-img img{
+    height: 100%;
+    opacity: 0.5;
+}
+.page3 .board-container .back-img img:nth-child(1){
+    rotate: -180deg;
+}
+.page3 .board-container .leaderboard{
+    position: absolute;
+    top: 15%;
+    left: 14%;
+}
+.page3 .board-container .leaderboard h2{
+    font-size: 2.5vh;
     text-transform: uppercase;
-    font-size: 1.5vh;
+    text-align: center;
+    padding-right: 45px;
+    padding-bottom: 30px;
     color: black;
-}
-.menu-items .items-container .item-price h6{
-    font-size: 1.5vh;
-    font-weight: 400;
-    color: black;
-}
-.menu-items .items-container p{
-    color: black;
-    font-size: 1.6vh;
-    font-weight: 200;
-}
-.menu-items img{
-    margin-bottom: 20px;
-    margin-top: 25px;
-    height: 28vh;
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+    font-weight: 900;
 }
 
 .page4{
-    padding-top: 100px;
+    padding-top: 20px;
     position: relative;
-    height: 86vh;
+    height: 77vh;
 }
 .page4>h3{
     padding: 0px 12px;
     position: absolute;
-    top: 112px;
+    top: 36px;
     color: #B2E723;
-    font-size: 27.5px;
+    font-size: 21.5px;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 .page4 .container{
     padding: 15px 15px;
@@ -367,6 +286,7 @@ footer{
     margin-top: 18px;
     font-size: 12px;
 }
+
 
 .menu-section-open{
     height: 100vh;
