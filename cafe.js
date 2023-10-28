@@ -318,7 +318,7 @@ boards.addEventListener("click", function () {
             </div>
             <div class="item-price">
                 <h4>GARLIC BREAD</h4>
-                <h6>£</h6>
+                <h6>£6.25</h6>
             </div>
         </div>
         <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/04/cafe-menu-sharing-cropped.jpg?strip=all&lossy=1&sharp=1&w=1152&ssl=1"
